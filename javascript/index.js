@@ -1,3 +1,7 @@
+function showAllCities() {
+  location.reload(); // Simple way to reload the full view
+}
+
 function updateTime() {
   // Tokyo
   let tokyoElement = document.querySelector("#tokyo");
@@ -36,7 +40,7 @@ function updateTime() {
     );
   }
 
-    // Windhoek
+  // Windhoek
   let windhoekElement = document.querySelector("#windhoek");
   if (windhoekElement) {
     let windhoekDateElement = windhoekElement.querySelector(".date");
@@ -68,7 +72,12 @@ function updateCity(event) {
     "A"
   )}</small></div>
     </div>
-    `;
+
+    <!--Back Button-->
+    <div class="back-button">
+      <button onclick="showAllCities()">⬅ Back</button>
+    </div>
+      `;
 }
 
 updateTime();
