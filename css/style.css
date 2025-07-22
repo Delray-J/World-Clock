@@ -1,11 +1,11 @@
 body {
-    background-color: aqua;
-    font-family: 'Dancing Script', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: "Lora", serif;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/960/original/pexels-lara-jameson-8828681.jpg?1753211294);
+    background-size: cover;
 } 
   
 h1 {
     text-align: center;
-    font-family: sans-serif;
     font-size: 36px;
 }
 
@@ -18,14 +18,15 @@ select {
     display: block;
     width: 100%;
     font-size: 18px;
-    border-radius: 4px;
+    font-family: "Lora", serif;
+    border-radius: 10px;
     padding: 10px;
   }
   
   .container {
     max-width: 600px;
     margin: 60px auto;
-    background: white;
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     padding: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
@@ -104,5 +105,19 @@ select {
 
 
 footer {
-    text-align: center;
+  background-color: rgba(44, 44, 44, 0.55);
+  color: #f0eae2;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #d3b37a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f3dda3;
 }
